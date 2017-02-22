@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.seanm.mrrobotstore.MainActivity">
+    
+    <ImageView
+        android:id="@+id/MrRobotPhoto"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/mr_robot_store" />
+    
+    <TextView
+        android:id="@+id/StoreMotto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Repair with a Smile!"
+        android:layout_below="@+id/MrRobotPhoto"
+        android:padding="22dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/StoreHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/StoreMotto"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:text="Hours of Operation: Mon - Fri 0700 - 1600" />
+
+    <TextView
+        android:id="@+id/StoreNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StoreHours"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:text="Contact Us: (555)555-5555" />
+</RelativeLayout>
